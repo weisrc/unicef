@@ -20,7 +20,6 @@ export function character(id: CharacterId, x: number, y: number, tag: string) {
   const character = add([
     // @ts-ignore
     origin("bot") as void,
-    solid(),
     sprite(id),
     pos(x, y),
     z(0),

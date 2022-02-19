@@ -1,5 +1,11 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Shizuru&display=swap"); */
+
 .box {
   background: rgba(255, 255, 255, 0.5);
-  font-family: "Shizuru", cursive;
+  font-family: "monospace";
   padding: 5px;
+}
+
+html, body {
+  margin: 0;
 }
