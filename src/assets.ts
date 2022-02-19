@@ -16,7 +16,7 @@ export const characterIds = [
 export type CharacterId = typeof characterIds[number];
 
 export function getCharacterUrl(id: CharacterId) {
-	return `assets/characters/${id}.png`
+	return `characters/${id}.png`
 }
 
 function loadCharacter(id: CharacterId) {
@@ -32,6 +32,6 @@ function loadCharacter(id: CharacterId) {
 
 export function loadAssets() {
 	for (const id of characterIds) loadCharacter(id);
-    loadSprite("world", "assets/world.png");
+    loadSprite("world", "world.png");
 
 }
