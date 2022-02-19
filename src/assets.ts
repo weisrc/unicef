@@ -15,8 +15,12 @@ export const characterIds = [
 
 export type CharacterId = typeof characterIds[number];
 
+export function getCharacterUrl(id: CharacterId) {
+	return `assets/characters/${id}.png`
+}
+
 function loadCharacter(id: CharacterId) {
-	loadSprite(id, `assets/characters/${id}.png`, {
+	loadSprite(id, getCharacterUrl(id), {
 		sliceX: 6,
 		sliceY: 5,
 		anims: {

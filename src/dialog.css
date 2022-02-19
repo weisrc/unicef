@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Shizuru&display=swap");
+
+#dialog {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 50%;
+  display: none;
+  max-height: 50%;
+}
+
+#dialog-img {
+}
+
+#dialog-content {
+  font-weight: bold;
+  font-size: large;
+}
+
+#dialog-title {
+  font-weight: bold;
+}
+
+#dialog-close {
+  appearance: none;
+  border: 1px solid black;
+  background: coral;
+  padding: 5px;
+  font-weight: bold;
+  font-family: "Shizuru", cursive;
+}
+
+#dialog-close:hover {
+  background: red;
+}
