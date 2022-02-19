@@ -13,7 +13,7 @@ export function npc(
   const npc = character(id, x, y, "npc");
 
   npc.onClick(() => {
-    dialog(getCharacterUrl(id), title, content);
+    dialog(title, content);
     click();
   });
 }

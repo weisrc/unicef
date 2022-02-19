@@ -10,7 +10,7 @@ export type Task = {
         title: string,
         content: string
     },
-    objective: {
+    objective?: {
         title: string,
         content: string
     }
@@ -18,7 +18,7 @@ export type Task = {
 
 export function builder(tasks: Task[]) {
     for (const {id, x,y,dialog: {title, content}, objective: obj} of tasks) {
-        const done = objective(obj.title, obj.content)
+        const done = (obj) ? objective(obj.title, obj.content) : () => {}
         npc(id, x,y, title, content, done)
     }
 }
