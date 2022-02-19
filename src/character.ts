@@ -11,7 +11,6 @@ export function character(id: CharacterId, x: number, y: number, tag: string) {
     color(255, 50, 50),
     outline(),
     pos(x, y),
-    solid(),
     z(100),
     tag,
   ]);
